@@ -1,0 +1,122 @@
+body {
+  font-size: 14px;
+}
+.container {
+  width: 100%;
+  background: hsl(0, 0%, 98%);
+  padding: 0px 0 100px 0;
+  position: absolute;
+  top: 39%;
+}
+.bg-img {
+  width: 100%;
+  z-index: -1;
+}
+.bg-img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+main {
+  width: 80%;
+  margin: -220px auto 0 auto;
+}
+header {
+  color: white;
+  letter-spacing: 15px;
+  margin-bottom: 30px;
+}
+.section,
+figure,
+section,
+.foot,
+form,
+footer,
+.reorder,
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+figure,
+p,
+img,
+span,
+.radio,
+input {
+  cursor: pointer;
+}
+p:hover,
+span:hover {
+  color: hsl(235, 19%, 35%);
+}
+figure:hover,
+.radio:hover {
+  border: 2px solid hsl(235, 24%, 19%);
+}
+.foot,
+section,
+header {
+  justify-content: space-between;
+}
+article,
+footer,
+form {
+  background: hsl(0, 0%, 98%);
+  border-radius: 7px;
+  box-shadow: 0 0 20px 10px hsla(220, 98%, 61%, 0.1);
+}
+form {
+  justify-content: flex-start;
+}
+input {
+  background: transparent;
+  border: none;
+  width: 80%;
+  color: hsl(236, 9%, 61%);
+  outline: none;
+}
+form,
+footer {
+  width: 100%;
+  height: 60px;
+  margin-bottom: 20px;
+}
+section {
+  width: 100%;
+  margin: 0 auto;
+  border-bottom: 1px solid hsl(233, 11%, 84%);
+  color: hsl(236, 9%, 61%);
+}
+figure,
+.radio {
+  padding: 0;
+  margin: 0 10px 0 20px;
+  width: 25px;
+  height: 25px;
+  border: 2px solid hsl(236, 33%, 92%);
+  border-radius: 50%;
+}
+.cross {
+  margin-right: 20px;
+}
+.foot {
+  padding: 10px 25px;
+  color: hsl(236, 9%, 61%);
+}
+footer {
+  margin: 20px 0;
+}
+footer span {
+  color: hsl(236, 9%, 61%);
+  padding: 0 20px;
+}
+.reorder {
+  color: gray;
+}
+@media (min-width: 600px) {
+  main {
+    width: 70%;
+    max-width: 550px;
+  }
+}
