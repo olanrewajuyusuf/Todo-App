@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+}
+* {
+    box-sizing: border-box;
+}
+
+.Todo-page {
+    width: 100%;
+    max-width: 1440px;
+    height: fit-content;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.background {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.background img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+main {
+    width: 88%;
+    margin: 15px auto;
+}
+header, form, .todo-item, .todos, footer, .foot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+h1 {
+    color: white;
+    letter-spacing: 5px;
+}
+form {
+    width: 100%;
+    justify-content: flex-start;
+    padding: 20px 0;
+    border-radius: 5px;
+    margin-top: 8px;
+}
+form .radio {
+    width: 18px;
+    height: 18px;
+    border: 1px solid;
+    border-radius: 50%;
+    margin: 0 10px 0 15px;
+}
+form input {
+    width: 70%;
+    background: none;
+    outline: none;
+    border: none;
+}
+form input::placeholder {
+    color: hsl(235, 19%, 35%);
+}
+
+/* Body of the app */
+.body {
+    margin-top: 20px;
+}
+.todo-item {
+    padding: 18px 15px;
+}
+.todo-item:first-child {
+    border-radius: 5px 5px 0 0;
+}
+.todos {
+    position: relative;
+    cursor: pointer;
+}
+.todos input {
+    position: absolute;
+    top: -2px;
+    opacity: 0;
+    z-index: 1;
+    cursor: pointer;
+}
+.todos span {
+    padding: 8px 8px;
+    border: 1px solid;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    top: -2px;
+    left: 0;
+}
+.todos span img {
+    display: none;
+}
+.todos input:checked ~ span {
+    border: none;
+    padding: 0px 4px;
+    background: linear-gradient(-40deg, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+}
+.todos input:checked ~ span img {
+    display: inline-block;
+}
+.close {
+    font-size: 20px;
+}
+
+/* footer area */
+footer {
+    position: relative;
+    padding: 18px;
+    border-radius: 0 0 5px 5px;
+}
+.foot {
+    width: 100%;
+    justify-content: center;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    padding: 20px 0;
+    border-radius: 5px;
+}
+.foot p {
+    margin: 0 10px;
+    cursor: pointer;
+}
+.reorder {
+    margin: 110px 0 70px 0;
+    text-align: center;
+}
+
+@media (min-width: 600px) {
+    main {
+       width: 60%; 
+       margin-top: 60px;
+    }
+}
+
+@media (min-width: 900px) {
+    body {
+        max-width: 1440px;
+    }
+
+    main {
+       width: 40%; 
+    }
+
+    form {
+        padding: 20px 0;
+    }
+    
+    .todo-item {
+        padding: 15px;
+    }
+    .close {
+        font-size: 30px;
+        opacity: 0;
+    }
+    .close:hover {
+        opacity: 1;
+    }
+    .todos:hover ~ .close {
+        opacity: 1;
+    }
+
+    footer {
+        padding: 20px 18px;
+    }
+    .foot {
+        width: unset;
+        justify-content: center;
+        position: relative;
+        top: 0;
+        left: 0;
+        padding: 0;
+        border-radius: unset;
+    }
+    .foot p {
+        font-size: 15px;
+    }
+    .reorder {
+        margin: 60px 0 70px 0;
+    }
+}

@@ -1,0 +1,29 @@
+{
+  "todoData": [
+    {
+      "id": 1,
+      "todo": "Completed online javascript course",
+      "check": true
+    },
+    {
+      "id": 2,
+      "todo": "Jog around the park 3x",
+      "check": false
+    },
+    {
+      "id": 4,
+      "todo": "Read for 1 hour",
+      "check": false
+    },
+    {
+      "id": 6,
+      "todo": "Complete Todo App on Frontend Mentor",
+      "check": false
+    },
+    {
+      "todo": "Jumat Service at noon",
+      "check": false,
+      "id": 7
+    }
+  ]
+}
